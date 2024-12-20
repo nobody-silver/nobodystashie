@@ -1,0 +1,200 @@
+{
+  "ParentMenu": [
+    {
+      "Filters": [
+        {
+          "FilterName": "Jewels",
+          "RawQuery": "ClassName == \"Jewel\"",
+          "Shifting": false,
+          "Affinity": false
+        }
+      ],
+      "MenuName": "Overwrites"
+    },
+    {
+      "Filters": [
+        {
+          "FilterName": "Basically Everything",
+          "RawQuery": "ClassName == \"StackableCurrency\"\n&& !ContainsString(Path, new string[] { \"CurrencyDelveCrafting\", \"CurrencyItemisedProphecy\", \"CurrencyAfflictionOrb\", \"Mushrune\", \"Essence\" })\n&& !ContainsString(BaseName, new string[] { \"Stacked Deck\", \"Catalyst\", \"Primeval Remnant\", \"Remnant\", \"Splinter\", \"Oil Extractor\" , \"Filled Coffin\"})",
+          "Shifting": false,
+          "Affinity": false
+        }
+      ],
+      "MenuName": "Currency"
+    },
+    {
+      "Filters": [
+        {
+          "FilterName": "All",
+          "RawQuery": "ContainsString(BaseName, new string[] { \"Essence\", \"Remnant\" }) \n&& !ClassName.Contains(\"Skill Gem\") && BaseName != \"Primeval Remnant\"",
+          "Shifting": false,
+          "Affinity": true
+        }
+      ],
+      "MenuName": "Essences"
+    },
+    {
+      "Filters": [
+        {
+          "FilterName": "Waystones",
+          "RawQuery": "MapInfo.IsMap && ClassName == \"Map\" && MapInfo.Tier < 13",
+          "Shifting": false,
+          "Affinity": false
+        },
+        {
+          "FilterName": "Waystones T13+",
+          "RawQuery": "MapInfo.IsMap && ClassName == \"Map\" && MapInfo.Tier >= 13",
+          "Shifting": false,
+          "Affinity": false
+        },
+        {
+          "FilterName": "Precusor Tablet",
+          "RawQuery": "ClassName == \"TowerAugmentation\"",
+          "Shifting": false,
+          "Affinity": false
+        }
+      ],
+      "MenuName": "Waystones"
+    },
+    {
+      "Filters": [
+        {
+          "FilterName": "Catalysts",
+          "RawQuery": "BaseName.Contains(\"Catalyst\")",
+          "Shifting": false,
+          "Affinity": false
+        }
+      ],
+      "MenuName": "Catalysts"
+    },
+    {
+      "Filters": [
+        {
+          "FilterName": "Splinters",
+          "RawQuery": "Path.Contains(\"CurrencyAfflictionShard\")",
+          "Shifting": false,
+          "Affinity": true
+        },
+        {
+          "FilterName": "Simu Map",
+          "RawQuery": "Path.Contains(\"CurrencyAfflictionFragment\")",
+          "Shifting": false,
+          "Affinity": true
+        },
+        {
+          "FilterName": "Orbs",
+          "RawQuery": "Path.Contains(\"CurrencyAfflictionOrb\")",
+          "Shifting": false,
+          "Affinity": true
+        }
+      ],
+      "MenuName": "Delirium"
+    },
+    {
+      "Filters": [
+        {
+          "FilterName": "Charms",
+          "RawQuery": "ClassName == \"UtilityFlask\"",
+          "Shifting": false,
+          "Affinity": false
+        }
+      ],
+      "MenuName": "Charms"
+    },
+    {
+      "Filters": [
+        {
+          "FilterName": "Rune",
+          "RawQuery": "BaseName.Contains(\"Rune\")",
+          "Shifting": false,
+          "Affinity": false
+        },
+        {
+          "FilterName": "Soul Core",
+          "RawQuery": "ClassName == \"SoulCore\"",
+          "Shifting": false,
+          "Affinity": false
+        }
+      ],
+      "MenuName": "Runes"
+    },
+    {
+      "Filters": [
+        {
+          "FilterName": "All",
+          "RawQuery": "Rarity == ItemRarity.Unique && ClassName != \"Map\"",
+          "Shifting": false,
+          "Affinity": true
+        }
+      ],
+      "MenuName": "Uniques"
+    },
+    {
+      "Filters": [
+        {
+          "FilterName": "Sanctum Key",
+          "RawQuery": "ClassName == \"ItemisedSanctum\"",
+          "Shifting": false,
+          "Affinity": false
+        },
+        {
+          "FilterName": "Ultimatum Key",
+          "RawQuery": "ClassName == \"UltimatumKey\"",
+          "Shifting": false,
+          "Affinity": false
+        }
+      ],
+      "MenuName": "Keys"
+    },
+    {
+      "Filters": [
+        {
+          "FilterName": "All",
+          "RawQuery": "ClassName.Contains(\"Flask\") && Rarity != ItemRarity.Unique",
+          "Shifting": false,
+          "Affinity": true
+        }
+      ],
+      "MenuName": "Flasks"
+    },
+    {
+      "Filters": [
+        {
+          "FilterName": "All",
+          "RawQuery": "ClassName.Contains(\" Skill Gem\")",
+          "Shifting": false,
+          "Affinity": true
+        }
+      ],
+      "MenuName": "Skill Gems"
+    },
+    {
+      "Filters": [
+        {
+          "FilterName": "All",
+          "RawQuery": "ClassName == \"Jewel\"\n|| ClassName == \"AbyssJewel\"\n|| BaseName.Contains(\"Cluster\") && Rarity != ItemRarity.Unique",
+          "Shifting": false,
+          "Affinity": false
+        }
+      ],
+      "MenuName": "Jewels"
+    },
+    {
+      "Filters": [
+        {
+          "FilterName": "Rares",
+          "RawQuery": "!MapInfo.IsMap && Rarity == ItemRarity.Rare",
+          "Shifting": true,
+          "Affinity": false
+        },
+        {
+          "FilterName": "Magics",
+          "RawQuery": "!MapInfo.IsMap && Rarity == ItemRarity.Magic",
+          "Shifting": true,
+          "Affinity": false
+        }
+      ],
+      "MenuName": "Left overs"
+    }
+  ]
+}
