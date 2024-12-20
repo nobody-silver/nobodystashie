@@ -161,12 +161,12 @@
       "Filters": [
         {
           "FilterName": "All",
-          "RawQuery": "ClassName.Contains(\" Skill Gem\")",
+          "RawQuery": "ClassName.Contains(\"Gem\")",
           "Shifting": false,
           "Affinity": true
         }
       ],
-      "MenuName": "Skill Gems"
+      "MenuName": "Gems"
     },
     {
       "Filters": [
