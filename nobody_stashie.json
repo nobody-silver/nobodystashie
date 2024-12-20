@@ -172,7 +172,7 @@
       "Filters": [
         {
           "FilterName": "All",
-          "RawQuery": "ClassName == \"Jewel\"\n|| ClassName == \"AbyssJewel\"\n|| BaseName.Contains(\"Cluster\") && Rarity != ItemRarity.Unique",
+          "RawQuery": "ClassName == \"Jewel\"",
           "Shifting": false,
           "Affinity": false
         }
